@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5B637D29BEB408009C2F5E /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B637C29BEB408009C2F5E /* PostsViewModel.swift */; };
+		2B5B638029BEBE5C009C2F5E /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B637F29BEBE5C009C2F5E /* PostsRepository.swift */; };
+		2B5B638529C03AED009C2F5E /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B638429C03AED009C2F5E /* SignUp.swift */; };
+		2B5B638829C24E18009C2F5E /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B638729C24E18009C2F5E /* AppColor.swift */; };
 		2BFFB7B029B90F11006495E0 /* MyPlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7AF29B90F11006495E0 /* MyPlaceApp.swift */; };
-		2BFFB7B229B90F11006495E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7B129B90F11006495E0 /* ContentView.swift */; };
 		2BFFB7B429B90F13006495E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFB7B329B90F13006495E0 /* Assets.xcassets */; };
 		2BFFB7B729B90F13006495E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFB7B629B90F13006495E0 /* Preview Assets.xcassets */; };
 		2BFFB7C129B90F13006495E0 /* MyPlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7C029B90F13006495E0 /* MyPlaceTests.swift */; };
 		2BFFB7CB29B90F13006495E0 /* MyPlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7CA29B90F13006495E0 /* MyPlaceUITests.swift */; };
 		2BFFB7CD29B90F13006495E0 /* MyPlaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7CC29B90F13006495E0 /* MyPlaceUITestsLaunchTests.swift */; };
+		2BFFB7DD29BBFF1D006495E0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7DC29BBFF1D006495E0 /* Post.swift */; };
+		2BFFB7DF29BC013F006495E0 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7DE29BC013F006495E0 /* Posts.swift */; };
+		2BFFB7E129BC04F1006495E0 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7E029BC04F0006495E0 /* PostCard.swift */; };
+		2BFFB7E529BD24BC006495E0 /* NewPostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7E429BD24BC006495E0 /* NewPostForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B5B637C29BEB408009C2F5E /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		2B5B637F29BEBE5C009C2F5E /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		2B5B638429C03AED009C2F5E /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		2B5B638729C24E18009C2F5E /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		2BFFB7AC29B90F11006495E0 /* MyPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFFB7AF29B90F11006495E0 /* MyPlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceApp.swift; sourceTree = "<group>"; };
-		2BFFB7B129B90F11006495E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BFFB7B329B90F13006495E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BFFB7B629B90F13006495E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BFFB7BC29B90F13006495E0 /* MyPlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,10 @@
 		2BFFB7C629B90F13006495E0 /* MyPlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFFB7CA29B90F13006495E0 /* MyPlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceUITests.swift; sourceTree = "<group>"; };
 		2BFFB7CC29B90F13006495E0 /* MyPlaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2BFFB7DC29BBFF1D006495E0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2BFFB7DE29BC013F006495E0 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		2BFFB7E029BC04F0006495E0 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		2BFFB7E429BD24BC006495E0 /* NewPostForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5B637E29BEBE2C009C2F5E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B637F29BEBE5C009C2F5E /* PostsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2B5B638129C03676009C2F5E /* Registrations */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B638429C03AED009C2F5E /* SignUp.swift */,
+			);
+			path = Registrations;
+			sourceTree = "<group>";
+		};
+		2B5B638629C0D058009C2F5E /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B638729C24E18009C2F5E /* AppColor.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		2BFFB7A329B90F11006495E0 = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +132,12 @@
 		2BFFB7AE29B90F11006495E0 /* MyPlace */ = {
 			isa = PBXGroup;
 			children = (
+				2B5B638629C0D058009C2F5E /* Styles */,
+				2B5B637E29BEBE2C009C2F5E /* Repositories */,
 				2BFFB7DB29B92A69006495E0 /* Models */,
 				2BFFB7DA29B92A61006495E0 /* ViewModels */,
 				2BFFB7D929B92A54006495E0 /* Views */,
 				2BFFB7AF29B90F11006495E0 /* MyPlaceApp.swift */,
-				2BFFB7B129B90F11006495E0 /* ContentView.swift */,
 				2BFFB7B329B90F13006495E0 /* Assets.xcassets */,
 				2BFFB7B529B90F13006495E0 /* Preview Content */,
 			);
@@ -133,6 +172,10 @@
 		2BFFB7D929B92A54006495E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B5B638129C03676009C2F5E /* Registrations */,
+				2BFFB7DE29BC013F006495E0 /* Posts.swift */,
+				2BFFB7E029BC04F0006495E0 /* PostCard.swift */,
+				2BFFB7E429BD24BC006495E0 /* NewPostForm.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +183,7 @@
 		2BFFB7DA29B92A61006495E0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2B5B637C29BEB408009C2F5E /* PostsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -147,6 +191,7 @@
 		2BFFB7DB29B92A69006495E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2BFFB7DC29BBFF1D006495E0 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,8 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BFFB7B229B90F11006495E0 /* ContentView.swift in Sources */,
+				2BFFB7DD29BBFF1D006495E0 /* Post.swift in Sources */,
+				2BFFB7E129BC04F1006495E0 /* PostCard.swift in Sources */,
+				2B5B638029BEBE5C009C2F5E /* PostsRepository.swift in Sources */,
+				2B5B637D29BEB408009C2F5E /* PostsViewModel.swift in Sources */,
 				2BFFB7B029B90F11006495E0 /* MyPlaceApp.swift in Sources */,
+				2B5B638529C03AED009C2F5E /* SignUp.swift in Sources */,
+				2BFFB7DF29BC013F006495E0 /* Posts.swift in Sources */,
+				2BFFB7E529BD24BC006495E0 /* NewPostForm.swift in Sources */,
+				2B5B638829C24E18009C2F5E /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

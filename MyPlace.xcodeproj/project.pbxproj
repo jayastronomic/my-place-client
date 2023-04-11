@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B3FDDF529D2AC520009D9C3 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3FDDF429D2AC520009D9C3 /* KeychainAccess */; };
 		2B5B637D29BEB408009C2F5E /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B637C29BEB408009C2F5E /* PostsViewModel.swift */; };
 		2B5B638029BEBE5C009C2F5E /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B637F29BEBE5C009C2F5E /* PostsRepository.swift */; };
-		2B5B638529C03AED009C2F5E /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B638429C03AED009C2F5E /* SignUp.swift */; };
+		2B5B638529C03AED009C2F5E /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B638429C03AED009C2F5E /* LandingPage.swift */; };
 		2B5B638829C24E18009C2F5E /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B638729C24E18009C2F5E /* AppColor.swift */; };
+		2B5B638A29C26915009C2F5E /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B638929C26915009C2F5E /* SignUp.swift */; };
+		2B5B638C29C27749009C2F5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B638B29C27749009C2F5E /* User.swift */; };
+		2B75268829CD7A030058C2F3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75268729CD7A020058C2F3 /* Home.swift */; };
+		2BBC7F9429C942DF00D2ADCC /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC7F9329C942DF00D2ADCC /* UsersViewModel.swift */; };
+		2BBC7F9929C9506200D2ADCC /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC7F9829C9506200D2ADCC /* UsersRepository.swift */; };
+		2BBC7F9C29C976C100D2ADCC /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC7F9B29C976C100D2ADCC /* Fetch.swift */; };
+		2BBC7FA129CACDD300D2ADCC /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC7FA029CACDD300D2ADCC /* AuthService.swift */; };
+		2BBC7FA329CC213E00D2ADCC /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC7FA229CC213E00D2ADCC /* AuthViewModel.swift */; };
+		2BBC7FA729CCF68800D2ADCC /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC7FA629CCF68800D2ADCC /* SignIn.swift */; };
 		2BFFB7B029B90F11006495E0 /* MyPlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFB7AF29B90F11006495E0 /* MyPlaceApp.swift */; };
 		2BFFB7B429B90F13006495E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFB7B329B90F13006495E0 /* Assets.xcassets */; };
 		2BFFB7B729B90F13006495E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFFB7B629B90F13006495E0 /* Preview Assets.xcassets */; };
@@ -43,8 +53,17 @@
 /* Begin PBXFileReference section */
 		2B5B637C29BEB408009C2F5E /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		2B5B637F29BEBE5C009C2F5E /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
-		2B5B638429C03AED009C2F5E /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		2B5B638429C03AED009C2F5E /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		2B5B638729C24E18009C2F5E /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		2B5B638929C26915009C2F5E /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		2B5B638B29C27749009C2F5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2B75268729CD7A020058C2F3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2BBC7F9329C942DF00D2ADCC /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		2BBC7F9829C9506200D2ADCC /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
+		2BBC7F9B29C976C100D2ADCC /* Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch.swift; sourceTree = "<group>"; };
+		2BBC7FA029CACDD300D2ADCC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2BBC7FA229CC213E00D2ADCC /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		2BBC7FA629CCF68800D2ADCC /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		2BFFB7AC29B90F11006495E0 /* MyPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFFB7AF29B90F11006495E0 /* MyPlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceApp.swift; sourceTree = "<group>"; };
 		2BFFB7B329B90F13006495E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3FDDF529D2AC520009D9C3 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				2B5B637F29BEBE5C009C2F5E /* PostsRepository.swift */,
+				2BBC7F9829C9506200D2ADCC /* UsersRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -96,7 +117,9 @@
 		2B5B638129C03676009C2F5E /* Registrations */ = {
 			isa = PBXGroup;
 			children = (
-				2B5B638429C03AED009C2F5E /* SignUp.swift */,
+				2B5B638429C03AED009C2F5E /* LandingPage.swift */,
+				2B5B638929C26915009C2F5E /* SignUp.swift */,
+				2BBC7FA629CCF68800D2ADCC /* SignIn.swift */,
 			);
 			path = Registrations;
 			sourceTree = "<group>";
@@ -107,6 +130,22 @@
 				2B5B638729C24E18009C2F5E /* AppColor.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		2BBC7F9A29C976AF00D2ADCC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2BBC7F9B29C976C100D2ADCC /* Fetch.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2BBC7F9F29CACDBD00D2ADCC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BBC7FA029CACDD300D2ADCC /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		2BFFB7A329B90F11006495E0 = {
@@ -132,6 +171,8 @@
 		2BFFB7AE29B90F11006495E0 /* MyPlace */ = {
 			isa = PBXGroup;
 			children = (
+				2BBC7F9F29CACDBD00D2ADCC /* Services */,
+				2BBC7F9A29C976AF00D2ADCC /* Network */,
 				2B5B638629C0D058009C2F5E /* Styles */,
 				2B5B637E29BEBE2C009C2F5E /* Repositories */,
 				2BFFB7DB29B92A69006495E0 /* Models */,
@@ -176,6 +217,7 @@
 				2BFFB7DE29BC013F006495E0 /* Posts.swift */,
 				2BFFB7E029BC04F0006495E0 /* PostCard.swift */,
 				2BFFB7E429BD24BC006495E0 /* NewPostForm.swift */,
+				2B75268729CD7A020058C2F3 /* Home.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				2B5B637C29BEB408009C2F5E /* PostsViewModel.swift */,
+				2BBC7F9329C942DF00D2ADCC /* UsersViewModel.swift */,
+				2BBC7FA229CC213E00D2ADCC /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				2BFFB7DC29BBFF1D006495E0 /* Post.swift */,
+				2B5B638B29C27749009C2F5E /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +257,9 @@
 			dependencies = (
 			);
 			name = MyPlace;
+			packageProductDependencies = (
+				2B3FDDF429D2AC520009D9C3 /* KeychainAccess */,
+			);
 			productName = MyPlace;
 			productReference = 2BFFB7AC29B90F11006495E0 /* MyPlace.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +332,9 @@
 				Base,
 			);
 			mainGroup = 2BFFB7A329B90F11006495E0;
+			packageReferences = (
+				2B3FDDF329D2AC520009D9C3 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 2BFFB7AD29B90F11006495E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -327,14 +378,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFFB7DD29BBFF1D006495E0 /* Post.swift in Sources */,
+				2BBC7FA729CCF68800D2ADCC /* SignIn.swift in Sources */,
 				2BFFB7E129BC04F1006495E0 /* PostCard.swift in Sources */,
+				2BBC7F9429C942DF00D2ADCC /* UsersViewModel.swift in Sources */,
+				2B75268829CD7A030058C2F3 /* Home.swift in Sources */,
 				2B5B638029BEBE5C009C2F5E /* PostsRepository.swift in Sources */,
 				2B5B637D29BEB408009C2F5E /* PostsViewModel.swift in Sources */,
 				2BFFB7B029B90F11006495E0 /* MyPlaceApp.swift in Sources */,
-				2B5B638529C03AED009C2F5E /* SignUp.swift in Sources */,
+				2B5B638529C03AED009C2F5E /* LandingPage.swift in Sources */,
 				2BFFB7DF29BC013F006495E0 /* Posts.swift in Sources */,
+				2BBC7F9929C9506200D2ADCC /* UsersRepository.swift in Sources */,
 				2BFFB7E529BD24BC006495E0 /* NewPostForm.swift in Sources */,
+				2BBC7F9C29C976C100D2ADCC /* Fetch.swift in Sources */,
 				2B5B638829C24E18009C2F5E /* AppColor.swift in Sources */,
+				2BBC7FA329CC213E00D2ADCC /* AuthViewModel.swift in Sources */,
+				2BBC7FA129CACDD300D2ADCC /* AuthService.swift in Sources */,
+				2B5B638A29C26915009C2F5E /* SignUp.swift in Sources */,
+				2B5B638C29C27749009C2F5E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +725,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B3FDDF329D2AC520009D9C3 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B3FDDF429D2AC520009D9C3 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B3FDDF329D2AC520009D9C3 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2BFFB7A429B90F11006495E0 /* Project object */;
 }

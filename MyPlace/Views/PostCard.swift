@@ -16,8 +16,8 @@ struct PostCard: View {
             .font(.subheadline)
             .fontWeight(.medium)
           Spacer()
-          Text(post.timestamp.formatted(date: .abbreviated, time: .omitted))
-            .font(.caption)
+//          Text(post.timestamp.formatted(date: .abbreviated, time: .omitted))
+//            .font(.caption)
         }
         .foregroundColor(.gray)
         HStack{

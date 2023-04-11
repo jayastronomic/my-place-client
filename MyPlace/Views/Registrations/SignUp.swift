@@ -2,76 +2,104 @@
 //  SignUp.swift
 //  MyPlace
 //
-//  Created by Julian Smith on 3/14/23.
+//  Created by Julian Smith on 3/15/23.
 //
 
 import SwiftUI
 
 struct SignUp: View {
-  @State private var email = ""
-  @State private var username = ""
-  @State private var password = ""
-  @State private var passwordConfirmation = ""
   
-  var body: some View {
-    ZStack{
-      Color.white.edgesIgnoringSafeArea(.all)
-      VStack {
-        Image("Bubble-Logo")
-          .resizable()
-          .frame(width: 400, height: 400)
-          .clipped()
-        Image("Bubble")
-          .resizable()
-          .aspectRatio(contentMode: .fill)
-          .frame(width: 100, height: 40)
-        VStack {
-          SignUpButton(title: "Sign up")
-          LoginButton(title: "Login")
-        }
-        .padding()
+  @Environment(\.dismiss) var dismiss
+  @State private var newUser = User.Create(
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: ""
+  )
+  @EnvironmentObject var authviewModel: AuthViewModel
+
+  typealias CreateAction = (User.Create) async throws -> Any
+  let createAction: CreateAction  
+  
+  private func createUser() {
+    Task {
+      do {
+        let token = try await createAction(newUser)
+        print(token)
+        authviewModel.isAuthenticated = true
+      } catch {
+        print("Cannot create user: \(error)")
       }
-      .padding()
     }
   }
-}
-
-struct SignUpButton: View {
-  var title: String
+  
   var body: some View {
-    Text(title)
-      .font(.title3)
-      .fontWeight(.bold)
-      .padding()
-      .foregroundColor(Color.white)
-      .frame(maxWidth: .infinity)
-      .background(AppColor.blue)
-      .cornerRadius(50)
+    NavigationView {
+        Form {
+          ZStack {
+            VStack {
+              HStack {
+                Text("Create your account")
+                  .font(.title2)
+                  .bold()
+                Spacer()
+              }
+              TextField("Email", text: $newUser.email)
+                .underlineTextField()
+              TextField("Username", text: $newUser.username)
+                .underlineTextField()
+              SecureField("Password", text: $newUser.password)
+                .underlineTextField()
+                .textContentType(.oneTimeCode)
+              SecureField("Confirm Password", text: $newUser.confirmPassword)
+                .underlineTextField()
+                .textContentType(.oneTimeCode)
+              
+              Button(action: {
+                createUser()
+              }) {
+                Text("Create Account")
+                  .bold()
+                  .padding()
+                  .frame(maxWidth: .infinity)
+                  .background(AppColor.blue)
+                  .foregroundColor(Color.white)
+                  .cornerRadius(10)
+              }
+              Spacer()
+            }
+            .padding()
+          }
+        }
+        .onSubmit(createUser)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .toolbar {
+          ToolbarItem(placement: .navigationBarLeading ) {
+            Button {
+              dismiss()
+            } label: {
+              Text("Cancel")
+            }
+          }
+        }
+      }
+    .navigationBarBackButtonHidden(true)
   }
 }
 
-struct LoginButton: View {
-  var title: String
-  var body: some View {
-    Text(title)
-      .font(.title3)
-      .fontWeight(.bold)
-      .padding()
-      .foregroundColor(AppColor.blue)
-      .frame(maxWidth: .infinity)
-      .background(Color.white)
-      .cornerRadius(50)
-      .overlay(
-        RoundedRectangle(cornerRadius: 50)
-          .stroke(Color.gray, lineWidth: 0.3)
-      )
-      .shadow(color: Color.black.opacity(0.14), radius: 60, x: 0.0, y: 16)
-  }
+extension View {
+    func underlineTextField() -> some View {
+        self
+            .padding(.vertical, 16)
+            .overlay(Rectangle().frame(height: 2).padding(.top, 35))
+            .foregroundColor(Color.gray)
+            .padding(10)
+    }
 }
 
 struct SignUp_Previews: PreviewProvider {
     static var previews: some View {
-        SignUp()
+        SignUp(createAction: { _ in })
+        .environmentObject(AuthViewModel())
     }
 }
-

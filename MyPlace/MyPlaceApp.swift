@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct MyPlaceApp: App {
+  @StateObject var authViewModel = AuthViewModel()
+  
     var body: some Scene {
         WindowGroup {
-          SignUp()
+          if authViewModel.isAuthenticated {
+            Home()
+              .environmentObject(authViewModel)
+          } else {
+            LandingPage()
+              .environmentObject(authViewModel)
+          }
         }
     }
 }

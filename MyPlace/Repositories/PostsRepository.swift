@@ -10,7 +10,7 @@ import Foundation
 struct PostsRepository {
   static let postsReference: [Post] = []
   
-  static func create(_ post: Post) async throws {
-    
+  func getPosts() async throws -> [Post] {
+    return try await fetch("/posts", method: .GET, type: [Post].self, payload: Post())!
   }
 }

@@ -9,7 +9,8 @@ import Foundation
 
 @MainActor
 class PostsViewModel: ObservableObject {
-  @Published var posts = [Post.testPost]
+  @Published var posts: [Post] = []
+  var postsRepository =  PostsRepository()
   
   func makeCreateAction() -> NewPostForm.CreateAction {
     return { [weak self] post in
@@ -17,4 +18,7 @@ class PostsViewModel: ObservableObject {
     }
   }
   
+  func fetchPosts() async throws {
+    self.posts = try await postsRepository.getPosts()
+  }
 }

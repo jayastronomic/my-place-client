@@ -12,6 +12,10 @@ struct Posts: View {
   @State private var searchText = ""
   @State private var showNewPostForm = false
   
+  func getPosts() {
+    
+  }
+  
   var body: some View {
     NavigationView {
       List(viewModel.posts) { post in
@@ -20,13 +24,6 @@ struct Posts: View {
         }
       }
       .navigationTitle("Home")
-//      .toolbar {
-//        Button {
-//          showNewPostForm = true
-//        } label: {
-//          Label("New Post", systemImage: "square.and.pencil")
-//        }
-//      }
       .searchable(text: $searchText)
     }
     .sheet(isPresented: $showNewPostForm) {
@@ -46,6 +43,16 @@ struct Posts: View {
       .padding(.trailing, 20)
       ,alignment: .bottomTrailing
     )
+    .onAppear {
+      Task {
+        do {
+          try await viewModel.fetchPosts()
+        } catch {
+          print("Error fetching posts: \(error.localizedDescription)")
+          viewModel.posts = []
+        }
+      }
+    }
   }
 }
 
